@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="description" content="国际AIOps挑战赛是由清华大学联合中国计算机学会(CCF)发起的智能运维攻关竞技比赛..."><link rel="icon" href="/logo.png"><title>国际AIOps挑战赛</title><link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"><script>const setLogo = () => {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+
+        let links = document.getElementsByTagName('link')
+        links[0].href = '/logo white.png'
+      }
+    }
+
+    setLogo()
+
+    const listeners = {
+      dark: function (matches) {
+        if (mediaQueryList && mediaQueryList.matches) {
+          let links = document.getElementsByTagName('link')
+          links[0].href = '/logo white.png'
+        }
+      },
+      light: function (mediaQueryList) {
+        if (mediaQueryList && mediaQueryList.matches) {
+          let links = document.getElementsByTagName('link')
+          links[0].href = '/logo.png'
+        }
+      }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(listeners.dark)
+    window.matchMedia('(prefers-color-scheme: light)').addListener(listeners.light)</script><link href="/static/css/app.740ccbb3.css" rel="preload" as="style"><link href="/static/js/app.73d65aac.js" rel="preload" as="script"><link href="/static/js/chunk-vendors.22b50932.js" rel="preload" as="script"><link href="/static/css/app.740ccbb3.css" rel="stylesheet"></head><body><noscript><strong>国际AIOps挑战赛是由清华大学联合中国计算机学会(CCF)发起的智能运维攻关竞技比赛...</strong></noscript><div id="app"></div><script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script><script src="/static/js/chunk-vendors.22b50932.js"></script><script src="/static/js/app.73d65aac.js"></script></body></html>
